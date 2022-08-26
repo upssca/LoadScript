@@ -15,9 +15,10 @@ window.onload = function () {
     }
     eval(params[i]);
   }
-  console.log(url);
   var ifrm = document.createElement("HMCWidgetIFrame");
   var url = "http://amokachi.hostmycalls.com:1903/?token=" + token;
+  console.log(url);
+
   ifrm.setAttribute("src", url);
 
   ifrm.style.position = "fixed";
