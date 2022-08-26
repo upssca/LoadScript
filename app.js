@@ -1,9 +1,9 @@
 window.onload = function () {
   var token;
 
-  var requestURL = document.getElementById("myScript").getAttribute("src");
+  var requestURL = request.URL;
   console.log(requestURL);
-  var queryString = document.URL.substring(requestURL.indexOf("?") + 1, requestURL.length);
+  var queryString = requestURL.substring(requestURL.indexOf("?") + 1, requestURL.length);
   console.log(queryString);
   var params = queryString.split("&");
   console.log(params);
