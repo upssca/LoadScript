@@ -1,7 +1,7 @@
 window.onload = function () {
   var token;
 
-  var requestURL = document.URL;
+  var requestURL = document.getElementById("myScript").getAttribute("src");
   console.log(requestURL);
   var queryString = document.URL.substring(requestURL.indexOf("?") + 1, requestURL.length);
 
