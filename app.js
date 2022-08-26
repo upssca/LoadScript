@@ -21,7 +21,7 @@ window.onload = function () {
   var ifrm = document.createElement("iframe");
   console.log(token);
   var url = "http://amokachi.hostmycalls.com:1903/?token=" + token;
-
+  console.log(url);
   ifrm.setAttribute("src", url);
 
   ifrm.style.position = "fixed";
