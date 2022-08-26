@@ -2,7 +2,7 @@ window.onload = function () {
   var token;
 
   var requestURL = document.URL;
-
+  console.log(requestURL);
   var queryString = document.URL.substring(requestURL.indexOf("?") + 1, requestURL.length);
 
   var params = queryString.split("&");
